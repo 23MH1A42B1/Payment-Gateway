@@ -30,7 +30,7 @@ const createPayment = async (req, res) => {
             }
         } else if (method === 'card') {
             if (!card || !card.number || !card.expiry_month || !card.expiry_year || !card.cvv || !card.holder_name) {
-                return res.status(400).json({ error: { code: 'BAD_REQUEST_ERROR', description: 'Missing card details' } });
+                return res.status(400).json({ error: { code: 'BAD_REQUEST_ERROR', description: 'Missing card details!' } });
             }
             if (!validateLuhn(card.number)) {
                 return res.status(400).json({ error: { code: 'INVALID_CARD', description: 'Card validation failed' } });
