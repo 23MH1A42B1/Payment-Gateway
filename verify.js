@@ -24,6 +24,7 @@ const runTest = async () => {
     try {
         console.log('--- Starting Verification ---');
 
+        
         // 1. Health Check
         console.log('\n[1] Checking /health...');
         const health = await request({
