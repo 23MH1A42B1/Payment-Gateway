@@ -10,7 +10,7 @@ const createOrder = async (req, res) => {
         return res.status(400).json({
             error: {
                 code: 'BAD_REQUEST_ERROR',
-                description: 'amount must be at least 100'
+                description: 'amount must be at least 100 '
             }
         });
     }
