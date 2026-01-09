@@ -146,6 +146,7 @@ payment-gateway/
 
 ## Tech Stack
 
+
 - **Backend**: Node.js & Express
 - **Database**: Postgres (schema auto-migrates on startup)
 - **Frontend**: React + Vite (Custom CSS, no massive libraries)
